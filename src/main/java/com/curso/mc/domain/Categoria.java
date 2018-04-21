@@ -15,7 +15,7 @@ public class Categoria implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Long idCategoria;
+	private Integer idCategoria;
 	
 	@Column
 	private String nome;
@@ -24,17 +24,17 @@ public class Categoria implements Serializable{
 		// TODO Auto-generated constructor stub
 	}
 
-	public Categoria(Long idCategoria, String nome) {
+	public Categoria(Integer idCategoria, String nome) {
 		super();
 		this.idCategoria = idCategoria;
 		this.nome = nome;
 	}
 
-	public Long getIdCategoria() {
+	public Integer getIdCategoria() {
 		return idCategoria;
 	}
 
-	public void setIdCategoria(Long idCategoria) {
+	public void setIdCategoria(Integer idCategoria) {
 		this.idCategoria = idCategoria;
 	}
 
